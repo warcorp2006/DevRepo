@@ -2,7 +2,12 @@ Instructions for deploying to this site to the server
 -----------------------------------------------------
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum arcu sed purus tincidunt mollis.
 
+
 Installation on ISS
 -------------------
 
 Content goes here
+
+
+Troubleshooting
+---------------
