@@ -1,0 +1,17 @@
+name: 2nd-workflow
+on [push]
+jobs:
+  explore-2nd-github-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ":-) this job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo ":-O this job is now running on a ${{ runner.os }} server hosted by Github!"
+      - run: echo ":-\ the name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}"
+      - name: Check out the repositiry code
+        uses: actions/checkout@v2
+      - run: echo ":-\ the ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo ":-( the workflow is now ready to test your code on the runner."
+      - name: List files in the repository
+      run: |
+        ls ${{ github.workspace }}
+      - run: echo "(:*) this job's status is ${{ job.status }}."
